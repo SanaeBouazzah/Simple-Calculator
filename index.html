@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Sum</title>
+    <style>
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:40px;
+            /* max-width: 300px;
+            width:100%;
+            width:fit-content */
+        }
+        .sum {
+            margin: 40px;
+            text-align: center;
+            padding: 40px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            width:fit-content
+        }
+
+        span {
+            text-align: left;
+            display: block;
+            font-weight: bold;
+            font-size: 25px;
+            font-family: sans-serif;
+        }
+
+        input {
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(140, 140, 140);
+            color: blue;
+            max-width:250px;
+            width: 100%;
+        }
+        h2 {
+            color: red;
+        }
+        .operators button{
+            margin:20px 5px;
+            text-align: center;
+            padding: 10px 30px;
+            font-size: 20px;
+            border: none;
+            background-color: black;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .operators button:hover{
+            background-color: #00bcd4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="sum">
+            <span>Num1</span>
+            <input type="text" name="" id="num1">
+            <span>Num2</span>
+            <input type="text" name="" id="num2">
+            <div class="operators">
+                <button class="multi"> * </button>
+                <button class="addition"> + </button>
+                <button class="subs"> - </button>
+                <button class="div"> / </button>
+                <button class="modulus"> % </button>
+            </div>
+            <h2 id="result"></h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
